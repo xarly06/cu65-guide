@@ -1,3 +1,10 @@
+  * [Content of the package](#content-of-the-package)
+  * [What do you need?](#what-do-you-need?)
+  * [Mount guide](#mount-guide)
+  * [Flash guide](#flash-guide)
+
+This guide is based on the @maz0r 's [CU-80 guide](https://github.com/maz0r/cu80-flashguide)
+
 # Welcome to the CU65 Readme!
 
 ## Content of the package
@@ -20,6 +27,8 @@
 - 2u stab for Enter key.
 - About 68 Switch keys.
 - USB C cable.
+- A star screwdriver
+- A 2.5mm hex key
 - (Optional) Some lube for switch keys and stabs like Krytox 205G0 or Trybosys 3204
 
 ### ANSI
@@ -29,6 +38,8 @@
 - 2u stab for Left Shift key.
 - About 67 Switch keys.
 - USB C cable.
+- A star screwdriver
+- A 2.5mm hex key
 - (Optional) Some lube for switch keys and stabs like Krytox 205G0 or Trybosys 3204
 
 ## Mount guide
@@ -41,7 +52,8 @@
 - Now you can put your stabs switches from the front case. I suggest you to hold the hotswap socket when you push the switch so as not to break them.
 - Put some keycaps to the stabs and **test them before put all the switch keys** .
 - Now you can put the rest of your favourites switches from the front case. Remember to hold the hotswap socket when you push the switch so as not to break them.
-- Use 7 rounded screws and wachers to screw the PCB to thev front case. At this image you cand found where is the holes for this screws.
+- Use 7 rounded screws and washers to screw the PCB to thev front case. At this image you cand found where is the holes for this screws.
+![pcbscrews](images/pcbscrews.jpg)
 - You can test again the switches.
 - Screw the footbar to the back case with the 3 big screws.
 - Put the foam layer and the back case. And screw the back case to the front case with 7 flat screws.
@@ -57,10 +69,9 @@
 **RIGHT CLICK SAVE AS!!**
 |Firmware Type |Layout|Link|
 |:---|:---|:---|
-| Default| ANSI|[Link](https://github.com/Xelus22/QMK-VIA-Hex/blob/master/capsunlocked_cu65_via.hex) |
 | VIA| ANSI/ISO|[Link](hexfiles/capsunlocked_cu65_via.hex)
 
-You can make your own hexfile at [qmk.fm](https://qmk.fm)
+You can make your own hexfile at [QMK Configurator](https://config.qmk.fm/#/)
 
 ### Getting ready to flash
 
@@ -75,10 +86,10 @@ In QMK Toolbox select Open & navigate to your .hex file and click open.
 This mode will persist until firmware is flashed or keyboard power is cycled unless no firmware is present.
 
 ##### Stock firmware
-- If the keyboard is functional . 
+ - If the keyboard is functional . 
     - FN + DELETE will reboot into DFU mode.
  - If the keyboard is not functional use [Hardware Reset](#hardware-reset).
- - 
+
 ##### VIA Firmware
 
  - If the keyboard is functional.
@@ -94,6 +105,7 @@ This mode will persist until firmware is flashed or keyboard power is cycled unl
  - Remove the backplate.
  - Plug in the keyboard.
  - Press the physical reset button on the back of the PCB
+ ![resetbtn](images/resetbtn.jpg)
  
 #### Verify you are in Bootloader Mode
 
@@ -105,6 +117,8 @@ If you have a different message check out the [Zadig](https://docs.qmk.fm/#/driv
 
 **for MacOS users you may have to tick the "Auto Flash Firmware" button for the device to be detected by QMK Toolkit!**
 
+![qmkdfu](images/qmkdfu.jpg)
+
 ### Clearing the EEPROM
 
 It's recommended that you clear the EEPROM if you're having any weird issues with any firmware you try, especially VIA-based firmwares. They store their configuration in spare EEPROM space, so clearing it will let the board start from a known good place so you can set it up again. Use the _Clear EEPROM_ button in the bottom left of the QMK Toolbox UI to do that, then flash a firmware again straight afterwards as Toolbox asks you to!
@@ -114,6 +128,10 @@ It's recommended that you clear the EEPROM if you're having any weird issues wit
 Click flash!
 
 On completion the keyboard should disconnect and begin <u>functioning</u> as per its new firmware.
+
+At QMK Toolbox you will see something like this if all went OK.
+
+![qmkflash](images/qmkflash.jpg)
 
 ## Configuration using VIA
 
@@ -125,7 +143,9 @@ On completion the keyboard should disconnect and begin <u>functioning</u> as per
 
 Once your keyboard has been detected in VIA, you should be presented with the following screen.
 
+![vialayout](images/vialayout.jpg)
 
 From here you can edit most functions of the keyboard from creating macros to rebinding layers.
 You can edit any key clicking on it on the top keyboard image and then click the new key value from the bottom section.
 From the left Layout section you can edit your layout to use ISO or ANSI layout.
+My first change was exchange the Left Windows and Left Alt keys.
