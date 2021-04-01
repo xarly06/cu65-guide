@@ -44,7 +44,7 @@ This guide is based on the @maz0r 's [CU-80 guide](https://github.com/maz0r/cu80
 
 ## Mount guide
 - Put off the back case and the white foam.
-- Put off the PCB, is very tight. I suggest push from spacebar first and then from opposite side of the USB. When you put off the PCB from this tight stand off is much easy to get it.
+- Put off the PCB, is very tight. I suggest push from opposite side of the USB side, where are going to be the Ins, Del, PgUp, PgDn keys. When you put off the PCB from this tight stand off is much easy to get it.
 - I suggest to connect the PCB to your PC and flash VIA Firmware. You can follow the instructions from the chapter for flash guide.
 - Now you can test Hotswap switches connections with some tweezers or a clip and with the key tester of VIA(if yopu flashed it) or some software like EK Switch Hitter.
 - Its time to put and screw the stabs.
