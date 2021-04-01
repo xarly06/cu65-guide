@@ -105,6 +105,7 @@ This mode will persist until firmware is flashed or keyboard power is cycled unl
  - Remove the backplate.
  - Plug in the keyboard.
  - Press the physical reset button on the back of the PCB
+
  ![resetbtn](images/resetbtn.jpg)
  
 #### Verify you are in Bootloader Mode
