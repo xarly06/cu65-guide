@@ -57,6 +57,7 @@ This guide is based on the @maz0r 's [CU-80 guide](https://github.com/maz0r/cu80
 - You can test again the switches.
 - Screw the footbar to the back case with the 3 big screws.
 - Put the foam layer and the back case. And screw the back case to the front case with 7 flat screws.
+- (Optional)Use your 2 foam stickers, one at the back case and other to the footbar.
 - Finally put your favourite keycaps to your switches and enjoy your CU65 Keyboard.
 
 ## Flash guide
