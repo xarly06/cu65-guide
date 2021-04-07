@@ -87,9 +87,7 @@ In QMK Toolbox select Open & navigate to your .hex file and click open.
 This mode will persist until firmware is flashed or keyboard power is cycled unless no firmware is present.
 
 ##### Stock firmware
- - If the keyboard is functional . 
-    - FN + DELETE will reboot into DFU mode.
- - If the keyboard is not functional use [Hardware Reset](#hardware-reset).
+ - Use [Hardware Reset](#hardware-reset).
 
 ##### VIA Firmware
 
